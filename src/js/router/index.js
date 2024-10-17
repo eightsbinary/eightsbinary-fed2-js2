@@ -7,11 +7,19 @@ import { routes } from './routes';
 import utils from '../utilities/utils';
 
 export default async function router(pathname = window.location.pathname) {
-  const route = await routes[pathname];
-  
-  if (route.protected && !authGuard()) {
-    alert("You must be logged in to view this page");
-    utils.redirectTo('/auth/login/')
-    return;
+  const route = routes[pathname];
+  try {
+    const module = await import(/* @vite-ignore */ route.path);
+
+    // Check if the route is protected
+    if (route.protected && !authGuard()) {
+      alert('You must be logged in to view this page');
+      utils.redirectTo('/auth/login/');
+      return;
+    }
+
+    console.log('Route module loaded successfully:', module);
+  } catch (error) {
+    console.error('Error loading route module:', error);
   }
 }
