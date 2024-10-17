@@ -23,13 +23,11 @@ class LoginController {
         email,
         password,
       });
-      // const response = await this.authController.login(data);
       console.log('Login success:', { user });
       // Handle successful login, e.g., redirect
       services.AuthService.authToken = token
       services.AuthService.authUser = user
-      // const { token, user } = await response
-      // utils.redirectTo('/')
+      utils.redirectTo('/')
     } catch (error) {
       console.error('Login failed:', error);
       // Handle failed login, e.g., show error message
