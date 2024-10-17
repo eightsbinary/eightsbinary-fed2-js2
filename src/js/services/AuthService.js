@@ -36,6 +36,10 @@ class AuthService {
   async register(name, email, password) {
     return await this.authRepository.register(name, email, password);
   }
+
+  logout() {
+    this.clearAuthData();
+  }
 }
 
 export default new AuthService();
