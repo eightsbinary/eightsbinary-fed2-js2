@@ -1,5 +1,10 @@
-// import { onRegister } from "../../../ui/auth/register";
+import controllers from "../../../controllers/index";
 
 const form = document.forms.register;
 
-form.addEventListener("submit", onRegister);
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    controllers.RegisterController.onRegister(event);
+  });
+}
