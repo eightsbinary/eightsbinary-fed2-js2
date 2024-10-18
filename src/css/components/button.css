@@ -1,0 +1,28 @@
+.btn {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-solid {
+  border: unset;
+}
+
+.btn-danger {
+  box-shadow: unset;
+  color: var(--solid-white);
+  background-color: var(--danger-color);
+}
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: -3rem;
+  width: 3rem;
+}

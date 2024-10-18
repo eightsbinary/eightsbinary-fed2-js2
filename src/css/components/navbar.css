@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-start {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.logo {
+  max-height: 2.5rem;
+}
+
+#header-search {
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1rem;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
