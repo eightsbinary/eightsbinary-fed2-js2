@@ -5,14 +5,15 @@ export class Posts {
     this.posts = posts.map(
       (post) =>
         new Post(
-          post.id,
-          post.title,
+          post._count,
+          post.author,
           post.body,
-          post.tags,
-          post.media,
           post.created,
+          post.id,
+          post.media,
+          post.tags,
+          post.title,
           post.updated,
-          post.author // Adjust based on your actual data structure
         )
     );
   }

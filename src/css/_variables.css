@@ -3,20 +3,39 @@
   --layout-padding: 1rem;
 
   /* colour */
-  --primary-color: rgb(59, 73, 223);
+  --bg-hover: rgb(47, 58, 178);
+  --body-bg: rgb(var(--grey-100));
   --danger-color: rgb(255, 47, 2);
   --link-color: rgb(59, 73, 223);
+  --primary-color: rgb(59, 73, 223);
   --solid-black: rgb(0, 0, 0);
   --solid-white: rgb(255, 255, 255);
-  --bg-hover: rgb(47, 58, 178);
+  --grey-100: rgb(245, 245, 245);
+  --grey-900: rgb(23, 23, 23, 0.05);
+  --button-ghost-color: #3d3d3d;
+  --tag-bg: rgba(86, 160, 54, 0.1);
 
   /* font-size */
+  --fs-xs: 0.75rem;
+  --fs-s: 0.875rem;
+  --fs-2xl: 1.5rem;
   --fs-3xl: 1.875rem;
+  --title-font-size: var(var(--fs-2xl));
+
+  /* line-height */
+  --lh-tight: 1.25;
 
   /* spacing */
+  --su-1: 0.25rem;
   --su-2: 0.5rem;
   --su-3: 0.75rem;
   --su-4: 1rem;
+  --su-5: 1.25rem;
   --su-6: 1.5rem;
+  --su-7: 2rem;
   --su-8: 3rem;
+
+  /* card */
+  --card-bg: rgb(var(--solid-white));
+  --card-secondary-boder: rgb(var(--grey-900), 0.05);
 }

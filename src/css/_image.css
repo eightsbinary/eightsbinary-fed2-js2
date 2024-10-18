@@ -1,0 +1,7 @@
+.avatar__image {
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 2rem;
+  height: 2rem;
+}

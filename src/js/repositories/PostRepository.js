@@ -4,7 +4,7 @@ import models from '../models/index';
 
 class PostRepository {
   async posts() {
-    const response = await fetch(`${API_SOCIAL_POSTS}?limit=12&_author=true`, {
+    const response = await fetch(`${API_SOCIAL_POSTS}?limit=12&page=1&_author=true`, {
       method: 'GET',
       headers: headers(),
     });
@@ -37,14 +37,15 @@ class PostRepository {
       const result = await response.json();
       const { data, meta } = result;
       const postInstance = new models.Post(
-        data.id,
-        data.title,
+        data._count,
+        data.author,
         data.body,
-        data.tags,
-        data.media,
         data.created,
+        data.id,
+        data.media,
+        data.tags,
+        data.title,
         data.updated,
-        data.author
       );
       return { success: true, data: postInstance, meta };
     } catch (error) {
@@ -67,14 +68,15 @@ class PostRepository {
       const result = await response.json();
       const { data, meta } = result;
       const postInstance = new models.Post(
-        data.id,
-        data.title,
+        data._count,
+        data.author,
         data.body,
-        data.tags,
-        data.media,
         data.created,
+        data.id,
+        data.media,
+        data.tags,
+        data.title,
         data.updated,
-        data.author
       );
       return { success: true, data: postInstance, meta: meta };
     } catch (error) {
@@ -97,14 +99,15 @@ class PostRepository {
       const result = await response.json();
       const { data, meta } = result;
       const postInstance = new models.Post(
-        data.id,
-        data.title,
+        data._count,
+        data.author,
         data.body,
-        data.tags,
-        data.media,
         data.created,
+        data.id,
+        data.media,
+        data.tags,
+        data.title,
         data.updated,
-        data.author
       );
       return { success: true, data: postInstance, meta: meta };
     } catch (error) {

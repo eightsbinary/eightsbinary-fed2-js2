@@ -1,12 +1,13 @@
 export class Post {
-  constructor(id, title, body, tags, media, created, updated, author) {
-    this.id = id;
-    this.title = title;
-    this.body = body;
-    this.tags = tags;
-    this.media = media;
-    this.created = created;
-    this.updated = updated;
+  constructor(_count, author, body, created, id, media, tags, title, updated) {
+    this._count = _count;
     this.author = author;
+    this.body = body;
+    this.created = created;
+    this.id = id;
+    this.media = media;
+    this.tags = tags;
+    this.title = title;
+    this.updated = updated;
   }
 }

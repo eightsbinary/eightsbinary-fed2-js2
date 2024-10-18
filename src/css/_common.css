@@ -4,9 +4,13 @@ main {
 
 .container {
   display: flex;
-  /* height: calc(100vh - 4.5rem); */
-  height: 100vh;
+  background-color: var(--grey-100);
+  min-height: 100vh;
   width: 100%;
+}
+
+.main-content {
+  background-color: var(--grey-100);
 }
 
 .link {
