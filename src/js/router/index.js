@@ -17,8 +17,6 @@ export default async function router(pathname = window.location.pathname) {
       utils.redirectTo('/auth/login/');
       return;
     }
-
-    console.log('Route module loaded successfully:', module);
   } catch (error) {
     console.error('Error loading route module:', error);
   }
