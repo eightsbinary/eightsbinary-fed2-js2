@@ -54,7 +54,6 @@ class PostRepository {
   }
 
   async create(data) {
-    // const { title, body, tags, media } = data;
     const payload = JSON.stringify(data);
     const response = await fetch(`${API_SOCIAL_POSTS}`, {
       method: 'POST',
@@ -85,7 +84,6 @@ class PostRepository {
   }
 
   async update(id, data) {
-    // const { title, body, tags, media } = data;
     const payload = JSON.stringify(data);
     const response = await fetch(`${API_SOCIAL_POSTS}/${id}`, {
       method: 'PUT',
