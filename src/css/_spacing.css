@@ -1,0 +1,11 @@
+.mb-3 {
+  margin-bottom: var(--su-3);
+}
+
+.pt-3 {
+  padding-top: var(--su-3);
+}
+
+.pb-6 {
+  padding-bottom: var(--su-6);
+}

@@ -1,0 +1,38 @@
+.registration {
+  width: 100%;
+  display: flex;
+  padding: var(--layout-padding);
+  justify-content: center;
+}
+
+.login,
+.register {
+  width: 100%;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--su-8);
+  padding-top: var(--su-6);
+  max-width: 40rem;
+  width: 100%;
+}
+
+.logo-auth {
+  max-height: 4rem;
+}
+
+.registration__content {
+  margin-bottom: var(--su-6);
+}
+
+.actions {
+  margin-bottom: 5px;
+}
+
+.footer-auth {
+  margin: var(--su-6) 0;
+}

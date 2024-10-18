@@ -1,0 +1,19 @@
+main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  /* height: calc(100vh - 4.5rem); */
+  height: 100vh;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}

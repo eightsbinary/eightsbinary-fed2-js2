@@ -4,10 +4,20 @@
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
+  width: 100%;
 }
 
 .btn-solid {
   border: unset;
+}
+
+.btn-primary {
+  color: var(--solid-white);
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--bg-hover);
 }
 
 .btn-danger {

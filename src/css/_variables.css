@@ -1,6 +1,22 @@
 :root {
-  /* --solid-white: #3498db; */
+  /* layout */
+  --layout-padding: 1rem;
+
+  /* colour */
+  --primary-color: rgb(59, 73, 223);
+  --danger-color: rgb(255, 47, 2);
+  --link-color: rgb(59, 73, 223);
   --solid-black: rgb(0, 0, 0);
   --solid-white: rgb(255, 255, 255);
-  --danger-color: rgb(255, 47, 2);
+  --bg-hover: rgb(47, 58, 178);
+
+  /* font-size */
+  --fs-3xl: 1.875rem;
+
+  /* spacing */
+  --su-2: 0.5rem;
+  --su-3: 0.75rem;
+  --su-4: 1rem;
+  --su-6: 1.5rem;
+  --su-8: 3rem;
 }
