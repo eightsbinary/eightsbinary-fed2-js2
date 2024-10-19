@@ -14,10 +14,11 @@
 .story {
   background: var(--solid-white);
   box-shadow: 0 0 0 1px var(--card-secondary-boder);
-  margin: 0 0 var(--su-2);
-  min-height: 14.1875rem;
+  margin: 0 auto var(--su-2);
   max-width: 38.5rem;
+  min-height: 14.1875rem;
   padding: var(--su-5);
+  width: 100%;
 }
 
 .story__top {

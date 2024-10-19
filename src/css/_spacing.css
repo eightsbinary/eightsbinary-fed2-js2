@@ -1,11 +1,40 @@
+.mt-2 {
+  margin-top: var(--su-2);
+}
+
+.mb-2 {
+  margin-bottom: var(--su-2);
+}
+
 .mb-3 {
   margin-bottom: var(--su-3);
+}
+
+.mb-4 {
+  margin-bottom: var(--su-4);
 }
 
 .pt-3 {
   padding-top: var(--su-3);
 }
 
+.pt-7 {
+  padding-top: var(--su-7);
+}
+
+.pt-9 {
+  padding-top: var(--su-9);
+}
+
 .pb-6 {
   padding-bottom: var(--su-6);
+}
+
+.m\:max-w-75 {
+  max-width: 75%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }

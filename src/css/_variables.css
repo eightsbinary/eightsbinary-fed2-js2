@@ -18,9 +18,10 @@
   /* font-size */
   --fs-xs: 0.75rem;
   --fs-s: 0.875rem;
+  --fs-l: 1.125rem;
   --fs-2xl: 1.5rem;
   --fs-3xl: 1.875rem;
-  --title-font-size: var(var(--fs-2xl));
+  --title-font-size: var(--fs-2xl);
 
   /* line-height */
   --lh-tight: 1.25;
@@ -34,8 +35,13 @@
   --su-6: 1.5rem;
   --su-7: 2rem;
   --su-8: 3rem;
+  --su-9: 4rem;
+  --su-10: 8rem;
 
   /* card */
   --card-bg: rgb(var(--solid-white));
   --card-secondary-boder: rgb(var(--grey-900), 0.05);
+
+  /* other */
+  --padding: var(--su-6);
 }

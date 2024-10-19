@@ -5,3 +5,19 @@ body {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
 }
+
+.title {
+  font-size: var(--fs-3xl);
+}
+
+.text-white {
+  color: var(--solid-white);
+}
+
+.lh-tight {
+  line-height: var(--lh-tight);
+}
+
+.m\:fs-l {
+  font-size: var(--fs-l);
+}
