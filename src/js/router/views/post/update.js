@@ -8,7 +8,6 @@ async function init() {
   try {
     const post = await controllers.PostController.post(id);
     const { data } = post;
-    console.log(data)
     populateFormData(data);
     attachUpdateEvent();
     attachCancelEvent(id);
