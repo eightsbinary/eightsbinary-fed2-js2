@@ -10,7 +10,6 @@ class PostService {
   }
 
   async post(id) {
-    const test = await this.postRepository.post(id);
     return await this.postRepository.post(id);
   }
 
