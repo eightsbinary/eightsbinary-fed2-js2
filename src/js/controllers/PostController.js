@@ -5,6 +5,7 @@ class PostController {
   constructor() {
     this.postService = services.PostService;
   }
+  
   async posts() {
     try {
       const { data, meta } = await this.postService.posts();
