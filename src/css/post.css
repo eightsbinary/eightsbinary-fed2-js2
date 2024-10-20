@@ -1,0 +1,14 @@
+.post {
+  justify-content: center;
+}
+
+#post-create {
+  display: flex;
+  justify-content: center;
+  max-width: 84.25rem;
+}
+
+.post-create__actions {
+  display: flex;
+  gap: 1rem;
+}

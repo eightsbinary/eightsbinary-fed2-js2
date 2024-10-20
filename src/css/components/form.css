@@ -39,7 +39,8 @@ form[name='login'] {
   width: 100%;
 }
 
-form[name='updateProfile'] {
+form[name='updateProfile'],
+form[name='createPost'] {
   display: flex;
   flex-direction: column;
   gap: var(--su-6);
