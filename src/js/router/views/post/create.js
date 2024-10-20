@@ -19,7 +19,7 @@ function attachCreateEvent() {
 }
 
 function attachCancelEvent() {
-  const cancelButton = document.getElementById('cancelPost');
+  const cancelButton = document.getElementById('cancelAction');
   if (cancelButton) {
     cancelButton.addEventListener('click', () => {
       controllers.PostController.onCancelPost(id);

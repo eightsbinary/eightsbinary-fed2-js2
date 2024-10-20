@@ -8,7 +8,7 @@ async function init() {
   try {
     const post = await controllers.PostController.post(id);
     const { data } = post;
-    populateFormData(data);
+    populatePostData(data);
     attachUpdateEvent();
     attachCancelEvent(id);
   } catch (error) {
@@ -17,7 +17,7 @@ async function init() {
   }
 }
 
-async function populateFormData(post) {
+async function populatePostData(post) {
   form.title.value = post.title;
   form.body.value = post.body || '';
   form.tags.value = post.tags ? post.tags.join(', ') : '';
@@ -34,7 +34,7 @@ function attachUpdateEvent() {
 }
 
 function attachCancelEvent(id) {
-  const cancelButton = document.getElementById('cancelPost');
+  const cancelButton = document.getElementById('cancelAction');
   if (cancelButton) {
     cancelButton.addEventListener('click', () => {
       controllers.PostController.onCancelPost(id);
