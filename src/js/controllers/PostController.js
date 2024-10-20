@@ -5,7 +5,7 @@ class PostController {
   constructor() {
     this.postService = services.PostService;
   }
-  
+
   async posts() {
     try {
       const { data, meta } = await this.postService.posts();
@@ -73,17 +73,17 @@ class PostController {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    if (data.tags) data.tags = this.processTags(data.tags);
-    if (data.media) data.media = this.processMedia(data);
+    if (data.tags) data.tags = this.structuredTags(data.tags);
+    if (data.media) data.media = this.structuredMedia(data);
 
     await this.create(data);
   }
 
-  processTags(tags) {
+  structuredTags(tags) {
     return tags ? tags.split(',').map((tag) => tag.trim()) : [];
   }
 
-  processMedia(data) {
+  structuredMedia(data) {
     const mediaObject = {
       url: data.media,
       alt: data.alt || '',
@@ -96,8 +96,8 @@ class PostController {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    if (data.tags) data.tags = this.processTags(data.tags);
-    if (data.media) data.media = this.processMedia(data);
+    if (data.tags) data.tags = this.structuredTags(data.tags);
+    if (data.media) data.media = this.structuredMedia(data);
 
     await this.update(id, data);
   }
