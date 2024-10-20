@@ -1,6 +1,6 @@
-import utils from '../../utilities/utils';
-import controllers from '../../controllers/index';
-import { renderPosts } from './home';
+import utils from '../../../utilities/utils';
+import controllers from '../../../controllers/index';
+import { renderPosts } from '../home';
 
 async function init() {
   const user = getAuthorOrAuthUser();
@@ -13,6 +13,7 @@ async function init() {
 
   renderProfile(profileContainer, data);
   renderPosts(articleContainer, response.data.posts);
+  attachProfileEditEvent();
 }
 
 function getAuthorOrAuthUser() {
@@ -69,6 +70,13 @@ function isAuthUser() {
   const author = utils.getUrlParams('author');
   if (!author) return true;
   return false;
+}
+
+function attachProfileEditEvent() {
+  const editProfileButton = document.querySelector('.btn-edit-profile');
+  editProfileButton.addEventListener('click', () => {
+    utils.redirectTo('/profile/edit/');
+  });
 }
 
 init();

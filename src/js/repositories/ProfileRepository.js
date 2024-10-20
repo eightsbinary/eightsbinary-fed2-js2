@@ -57,10 +57,12 @@ class ProfileRepository {
     }
   }
 
-  async update(name) {
+  async update(name, data) {
+    const payload = JSON.stringify(data);
     const response = await fetch(`${API_SOCIAL_PROFILES}/${name}`, {
       method: 'PUT',
       headers: headers(),
+      body: payload,
     });
 
     if (!response.ok) throw new Error('Update profile failed');
