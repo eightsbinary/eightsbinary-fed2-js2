@@ -18,6 +18,13 @@ export const routes = {
     path: '/src/js/router/views/post/update.js',
     protected: true,
   },
-  '/profile/': { path: '/src/js/router/views/profile.js', protected: true },
+  '/profile/': {
+    path: '/src/js/router/views/profile/index.js',
+    protected: true,
+  },
+  '/profile/edit/': {
+    path: '/src/js/router/views/profile/update.js',
+    protected: true,
+  },
   '/notFound/': { path: '/src/js/router/views/notFound.js', protected: false },
 };
