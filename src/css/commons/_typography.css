@@ -18,6 +18,14 @@ body {
   line-height: var(--lh-tight);
 }
 
+.fs-xs {
+  font-size: var(--fs-xs);
+}
+
 .m\:fs-l {
   font-size: var(--fs-l);
+}
+
+.l\:fs-5xl {
+  font-size: var(--fs-5xl);
 }

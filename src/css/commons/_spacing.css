@@ -1,3 +1,7 @@
+.mt-1 {
+  margin-top: var(--su-1);
+}
+
 .mt-2 {
   margin-top: var(--su-2);
 }
@@ -12,6 +16,10 @@
 
 .mb-4 {
   margin-bottom: var(--su-4);
+}
+
+.pl-3 {
+  padding-left: var(--su-3);
 }
 
 .pt-3 {

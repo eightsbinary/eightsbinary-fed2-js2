@@ -51,3 +51,14 @@
 .btn-unfollow {
   width: fit-content;
 }
+
+.btn-pill {
+  border-radius: 2rem;
+}
+
+.btn__edit-post,
+.btn__delete-post {
+  font-size: var(--fs-xs);
+  width: fit-content;
+  border: none;
+}

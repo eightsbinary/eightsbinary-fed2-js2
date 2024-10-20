@@ -2,6 +2,79 @@
   justify-content: center;
 }
 
+#post {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.article {
+  width: 100%;
+  max-width: 54.75rem;
+}
+
+.article__header__meta {
+  padding: var(--content-padding-y) var(--content-padding-x) 0
+    var(--content-padding-x);
+}
+
+.article__post-info {
+  display: flex;
+}
+
+.avatar-l {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.author-name {
+  font-weight: 700;
+}
+
+.article__actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.profile-link {
+  color: unset;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.color-base-60 {
+  color: var(--base-60);
+}
+
+.multiple_reactions_engagement {
+  padding: 0.5em 0;
+  cursor: default;
+  display: flex;
+  column-gap: 2.2em;
+  flex-wrap: wrap;
+  min-height: 40px;
+}
+
+.article__main {
+  padding: var(--content-padding-y) var(--content-padding-x);
+}
+
+.text-styles {
+  font-size: var(--content-font-size);
+  overflow-wrap: break-word;
+}
+
+/* create post */
 #post-create {
   display: flex;
   justify-content: center;

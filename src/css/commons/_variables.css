@@ -14,14 +14,19 @@
   --grey-900: rgb(23, 23, 23, 0.05);
   --button-ghost-color: #3d3d3d;
   --tag-bg: rgba(86, 160, 54, 0.1);
+  --base-60: #717171;
 
   /* font-size */
   --fs-xs: 0.75rem;
   --fs-s: 0.875rem;
   --fs-l: 1.125rem;
+  --fs-xl: 1.25rem;
   --fs-2xl: 1.5rem;
   --fs-3xl: 1.875rem;
+  --fs-4xl: 2.25rem;
+  --fs-5xl: 3rem;
   --title-font-size: var(--fs-2xl);
+  --content-font-size: var(--fs-xl);
 
   /* line-height */
   --lh-tight: 1.25;
@@ -43,5 +48,9 @@
   --card-secondary-boder: rgb(var(--grey-900), 0.05);
 
   /* other */
+  --header-height: 56px;
+  --layout-padding: var(--su-4);
+  --content-padding-y: var(--su-7);
+  --content-padding-x: var(--su-9);
   --padding: var(--su-6);
 }
