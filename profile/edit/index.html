@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noroff FED2 JS2 CA</title>
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-start">
+        <a clas="site-logo" href="/">
+          <img class="logo" src="/images/noroff-logo.png" alt="Noroff Logo" />
+        </a>
+        <div class="field field-search" id="header-search">
+          <form role="search" name="search">
+            <input
+              id="search-input"
+              class="input input-search"
+              placeholder="Search..."
+              id="q"
+              name="q"
+              type="text"
+            />
+            <button class="btn btn-search">
+              <ion-icon
+                class="icon icon-search"
+                name="search-outline"
+              ></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="nav-items">
+        <a class="nav-item" href="/profile/">My Profile</a>
+        <a class="nav-item" href="/post/create/">Create Post</a>
+        <button class="btn btn-solid btn-danger" id="btn-logout">Logout</button>
+      </div>
+    </nav>
+
+    <main class="profile">
+      <div id="profile-edit" class="container">
+        <div class="card">
+          <h2 class="profile__update-title mb-4">Update Profile</h2>
+          <form name="updateProfile">
+            <div class="field">
+              <label class="field__label" for="bio">Bio</label>
+              <input
+                class="textfield"
+                type="text"
+                name="bio"
+                id="bio"
+                placeholder="A short bio..."
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="banner">Banner image</label>
+              <input
+                class="textfield"
+                type="text"
+                name="banner"
+                id="banner"
+                placeholder="Banner image URL"
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="bannerAlt"
+                >Banner image description (for accessibility)</label
+              >
+              <input
+                class="textfield"
+                type="text"
+                name="bannerAlt"
+                id="bannerAlt"
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="avatar">Profile image</label>
+              <input
+                class="textfield"
+                type="text"
+                name="avatar"
+                id="avatar"
+                placeholder="Profile image URL"
+              />
+            </div>
+            <div>
+              <label class="field__label" for="avatarAlt"
+                >Profile image description for (accessibility)</label
+              >
+              <input
+                class="textfield"
+                type="text"
+                name="avatarAlt"
+                id="avatarAlt"
+              />
+            </div>
+            <div class="update-profile__actions">
+              <button class="btn btn-solid btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
