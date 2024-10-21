@@ -22,6 +22,7 @@ async function populatePostData(post) {
   form.body.value = post.body || '';
   form.tags.value = post.tags ? post.tags.join(', ') : '';
   form.media.value = post.media?.url || '';
+  form.alt.value = post.media?.alt || '';
 }
 
 function attachUpdateEvent() {

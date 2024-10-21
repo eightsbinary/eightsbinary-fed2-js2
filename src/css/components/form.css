@@ -40,7 +40,8 @@ form[name='login'] {
 }
 
 form[name='updateProfile'],
-form[name='createPost'] {
+form[name='createPost'],
+form[name='updatePost'] {
   display: flex;
   flex-direction: column;
   gap: var(--su-6);
