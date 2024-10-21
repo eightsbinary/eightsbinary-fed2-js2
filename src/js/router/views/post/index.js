@@ -8,6 +8,7 @@ async function init() {
     const id = utils.getUrlParams('id');
     const post = await controllers.PostController.post(id);
     const { data } = post;
+    console.log(data.author);
     renderPost(data, container);
     attachEditEvent(id);
     attachDeleteEvent(id);
@@ -30,7 +31,7 @@ async function renderPost(post, target) {
   postElement.innerHTML = `
     <header id="main-title" class="article__header">
       <img class="article__cover__image" src="${
-        post.media?.url  ? post.media?.url : ''
+        post.media?.url ? post.media?.url : ''
       }" style="aspect-ratio: auto 1000/420;" width="1000" height="420" alt="${
     post.media?.alt ? post.media?.alt : ''
   }" />
@@ -39,7 +40,9 @@ async function renderPost(post, target) {
       <div class="article__post-info">
         <a class="profile-link" href="/profile/?author=${post.author.name}">
           <span class="profile-avatar avatar-l">
-            <img class="avatar__image" src="${post.author.avatar?.url}" alt="${post.author.avatar?.alt}" />
+            <img class="avatar__image" src="${post.author.avatar?.url}" alt="${
+    post.author.avatar?.alt
+  }" />
           </span>
         </a>
         <div class="pl-3 flex-1 mt-1">
@@ -50,8 +53,12 @@ async function renderPost(post, target) {
           </div>
           <p class="article__created fs-xs">Posted on ${postCreated}</p>
           <div class="article__actions">
-            <button class="btn btn-pill btn-primary btn__edit-post" id="editPost">Edit Post</button>
-            <button class="btn btn-pill btn-danger  btn__delete-post" id="deletePost">Delete Post</button>
+            ${
+              isAuthor(post.author.name)
+                ? `<button class="btn btn-pill btn-primary btn__edit-post" id="editPost">Edit Post</button>
+                  <button class="btn btn-pill btn-danger  btn__delete-post" id="deletePost">Delete Post</button>`
+                : ''
+            }
           </div>
         </div>
       </div>
@@ -69,11 +76,11 @@ async function renderPost(post, target) {
 }
 
 function attachEditEvent(id) {
-  const editButton = document.getElementById('editPost')
+  const editButton = document.getElementById('editPost');
   if (editButton) {
     editButton.addEventListener('click', () => {
-      utils.redirectTo(`/post/edit/?id=${id}`)
-    })
+      utils.redirectTo(`/post/edit/?id=${id}`);
+    });
   }
 }
 
@@ -91,6 +98,12 @@ function attachDeleteEvent(id) {
       }
     });
   }
+}
+
+function isAuthor(author) {
+  const authUser = controllers.AuthController.authUser;
+  if (authUser.name === author) return true;
+  return false;
 }
 
 init();
