@@ -1,0 +1,29 @@
+.tag-layout {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-base);
+  gap: var(--layout-gap);
+  height: fit-content;
+  margin: 0 auto;
+  /* max-width: var(--site-width); */
+  max-width: 38.5rem;
+  padding: var(--layout-padding);
+  width: 100%;
+}
+
+.tag-header {
+  display: flex;
+}
+
+.l\:p-6 {
+  padding: var(--su-6);
+}
+
+.tag__list-title {
+  color: var(--base-100);
+  font-size: var(--fs-2xl);
+  font-size: var(--fs-3xl);
+  /* display: inline-flex; */
+  min-height: 40px;
+  align-items: center;
+}

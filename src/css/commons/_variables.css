@@ -3,32 +3,35 @@
   --layout-padding: 1rem;
 
   /* colour */
+  --base-100: 090909;
+  --base-60: #717171;
   --bg-hover: rgb(47, 58, 178);
   --body-bg: rgb(var(--grey-100));
+  --button-ghost-color: #3d3d3d;
   --danger-color: rgb(255, 47, 2);
+  --grey-100: rgb(245, 245, 245);
+  --grey-900: rgb(23, 23, 23, 0.05);
   --link-color: rgb(59, 73, 223);
   --primary-color: rgb(59, 73, 223);
   --solid-black: rgb(0, 0, 0);
   --solid-white: rgb(255, 255, 255);
-  --grey-100: rgb(245, 245, 245);
-  --grey-900: rgb(23, 23, 23, 0.05);
-  --button-ghost-color: #3d3d3d;
   --tag-bg: rgba(86, 160, 54, 0.1);
-  --base-60: #717171;
 
   /* font-size */
-  --fs-xs: 0.75rem;
-  --fs-s: 0.875rem;
-  --fs-l: 1.125rem;
-  --fs-xl: 1.25rem;
+  --content-font-size: var(--fs-xl);
   --fs-2xl: 1.5rem;
   --fs-3xl: 1.875rem;
   --fs-4xl: 2.25rem;
   --fs-5xl: 3rem;
+  --fs-base: 1rem;
+  --fs-l: 1.125rem;
+  --fs-s: 0.875rem;
+  --fs-xl: 1.25rem;
+  --fs-xs: 0.75rem;
   --title-font-size: var(--fs-2xl);
-  --content-font-size: var(--fs-xl);
 
   /* line-height */
+  --lh-base: 1.5;
   --lh-tight: 1.25;
 
   /* spacing */
@@ -48,9 +51,13 @@
   --card-secondary-boder: rgb(var(--grey-900), 0.05);
 
   /* other */
-  --header-height: 56px;
-  --layout-padding: var(--su-4);
-  --content-padding-y: var(--su-7);
   --content-padding-x: var(--su-9);
+  --content-padding-y: var(--su-7);
+  --header-height: 56px;
+  --layout-content-width: 1fr;
+  --layout-gap: var(--su-4);
+  --layout-padding: var(--su-4);
+  --layout: var(--layout-content-width);
   --padding: var(--su-6);
+  --site-width: 1380px;
 }

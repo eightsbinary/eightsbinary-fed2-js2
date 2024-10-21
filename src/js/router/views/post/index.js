@@ -8,8 +8,7 @@ async function init() {
     const id = utils.getUrlParams('id');
     const post = await controllers.PostController.post(id);
     const { data } = post;
-    console.log(data.author);
-    renderPost(data, container);
+    renderPost(data, container)
     attachEditEvent(id);
     attachDeleteEvent(id);
   } catch (error) {

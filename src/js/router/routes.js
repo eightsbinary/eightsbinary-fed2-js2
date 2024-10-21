@@ -26,5 +26,9 @@ export const routes = {
     path: '/src/js/router/views/profile/update.js',
     protected: true,
   },
+  '/tags/': {
+    path: '/src/js/router/views/tags/index.js',
+    protected: true,
+  },
   '/notFound/': { path: '/src/js/router/views/notFound.js', protected: false },
 };

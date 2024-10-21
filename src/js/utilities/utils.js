@@ -75,7 +75,7 @@ const utils = {
     return tags
       .map(
         (tag) =>
-          `<a href="/tag/?tag=${encodeURIComponent(
+          `<a href="/tags/?tag=${encodeURIComponent(
             tag
           )}" class="tag">#${tag}</a>`
       ) // Add '#' before each tag

@@ -4,6 +4,7 @@ import LogoutController from './LogoutController';
 import PostController from './PostController';
 import ProfileController from './ProfileController';
 import RegisterController from './RegisterController';
+import TagsController from './TagsController';
 
 const controllers = {
   AuthController,
@@ -12,6 +13,7 @@ const controllers = {
   PostController,
   ProfileController,
   RegisterController,
+  TagsController
 };
 
 export default controllers;
